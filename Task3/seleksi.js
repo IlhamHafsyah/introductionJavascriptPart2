@@ -1,7 +1,10 @@
-var nilaiAwal = 5
-var nilaiAkhir = 20
-var arra = [2, 25, 4, 14, 17, 30, 8]
+let nilaiAwal = 5
+let nilaiAkhir = 20
+let arra = [2, 25, 4, 14, 17, 30, 8]
 
+if (arra.length <= 5){
+    console.log('data di dalam Array harus di atas 5')
+} else {
 if (typeof(nilaiAwal) != 'number' || typeof(nilaiAkhir) != 'number' || Array.isArray(arra) != true) {
     console.log("masukkan salah")
 } else {
@@ -25,4 +28,5 @@ seleksiNilai = (nilaiAwal, nilaiAkhir, arra) => {
 }
 }
 seleksiNilai(nilaiAwal, nilaiAkhir, arra)
+}
 }

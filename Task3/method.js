@@ -1,6 +1,6 @@
 //1
 let x = 123.4567;
-let xx = x.toExponential(2); //toExponential digunakan untuk menyederhanakan penulisan nilai decimal
+let xx = x.toExponential(2); //toExponential digunakan untuk menyederhanakan penulisan nilai decimal (angka penting + orde besar)
 console.log(`1. ${xx} \n`);
 
 //2
@@ -18,7 +18,7 @@ let str = string1.charAt(0); //charAt digunakan untuk memanggil karakter dalam s
 console.log(`4. ${str} \n`);
 
 //5
-let gabungString = string1.concat(string2); //concat untuk menggabungkan 2 buah string dan array menjadi satu
+let gabungString = string1.concat(string2); //concat untuk menggabungkan 2 buah string atau array menjadi satu
 console.log(`5. ${gabungString} \n`);
 
 //6
@@ -31,7 +31,8 @@ let pop = arr.pop();
 console.log(`7. data array-nya menjadi ${arr}, dan hasil pop-nya adalah ${pop} \n`); //pop digunakan untuk menghapus data array yang paling terakhir kemudian menampilkannya
 
 //8
-let a = arr.sort(function(a, b){return a - b}) //sort digunakan untuk mengurutkan array sesuai besarnya nilai
+let a = arr.sort(function(a, b){
+    return a - b}) //sort digunakan untuk mengurutkan array sesuai besarnya nilai
 console.log(`8. ${a} \n`)
 
 //9
